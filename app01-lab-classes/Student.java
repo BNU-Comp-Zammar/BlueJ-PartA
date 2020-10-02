@@ -6,7 +6,8 @@ import java.util.*;
  * 
  * @author Michael Kölling and David Barnes
  * @version 2016.02.29
- * Modified by Derek Peacock (2017650)
+ * Modified by Zammar Baig(22011339)
+ * 02/10/2020
  */
 public class Student
 {
@@ -24,8 +25,8 @@ public class Student
      */
     public Student(String fullName, String studentID)
     {
-        name = fullName;
-        id = studentID;
+        name = "Jamie:Livingston";
+        id = "23758322";
         credits = 0;
     }
 
