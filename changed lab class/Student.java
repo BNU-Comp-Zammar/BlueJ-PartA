@@ -9,12 +9,16 @@ import java.util.*;
  */
 public class Student
 {
-    // the student's full name
+    //Attribute 
+    
     private String name;
-    // the student ID
+    
     private String id;
-    // the amount of credits for study taken so far
+    
+    // A BSc course has 120 credits, each module has 15 credits 
     private int credits;
+    
+    private Course course;
     
     /**
      * Create a new student with a given name and ID number.
@@ -58,6 +62,13 @@ public class Student
         credits += additionalPoints;
     }
 
+    /**
+     * Add some credit points to the student's accumulated credits.
+     */
+    public void addCourse(Course course)
+    {
+        this.course = course;
+    }
     
     /**
      * Return the number of credit points this student has accumulated.
@@ -83,5 +94,6 @@ public class Student
     public void print()
     {
         System.out.println(name + ", student ID: " + id + ", credits: " + credits);
+        course.print();
     }
 }
