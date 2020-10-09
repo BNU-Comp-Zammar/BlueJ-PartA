@@ -8,7 +8,11 @@ dependency2.type=UsesDependency
 editor.fx.0.height=722
 editor.fx.0.width=800
 editor.fx.0.x=456
+<<<<<<< Updated upstream
 editor.fx.0.y=122
+=======
+editor.fx.0.y=123
+>>>>>>> Stashed changes
 objectbench.height=101
 objectbench.width=776
 package.divider.horizontal=0.599476439790576
@@ -36,16 +40,26 @@ target1.showInterface=false
 target1.type=ClassTarget
 target1.typeParameters=
 target1.width=80
+<<<<<<< Updated upstream
 target1.x=80
 target1.y=90
+=======
+target1.x=110
+target1.y=40
+>>>>>>> Stashed changes
 target2.height=50
 target2.name=Course
 target2.showInterface=false
 target2.type=ClassTarget
 target2.typeParameters=
 target2.width=80
+<<<<<<< Updated upstream
 target2.x=330
 target2.y=280
+=======
+target2.x=360
+target2.y=240
+>>>>>>> Stashed changes
 target3.height=60
 target3.name=Student
 target3.naviview.expanded=true
@@ -53,5 +67,10 @@ target3.showInterface=false
 target3.type=ClassTarget
 target3.typeParameters=
 target3.width=80
+<<<<<<< Updated upstream
 target3.x=190
 target3.y=180
+=======
+target3.x=220
+target3.y=140
+>>>>>>> Stashed changes
