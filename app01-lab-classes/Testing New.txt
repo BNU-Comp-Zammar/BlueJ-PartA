@@ -1,0 +1,21 @@
+LabClass labClass1 = new LabClass(3);
+Student student1 = new Student("Kevin", "1234");
+Student kevin = new Student("Kevin", "1234");
+Student bob = new Student("Bob", "6789");
+Student AJ = new Student("aj", "1111");
+labClass1.enrollStudent(kevin);
+labClass1.enrollStudent(bob);
+labClass1.enrollStudent(AJ);
+labClass1.printList();
+Lab class unknown
+Instructor: unknown   Room: unknown
+Class list:
+Kevin, student ID: 1234, credits: 0
+Bob, student ID: 6789, credits: 0
+aj, student ID: 1111, credits: 0
+Number of students: 3
+Student student1 = new Student("Kevin", "1234");
+Course course1 = new Course();
+student1.addCredits(20);
+Course Computing = new Course();
+student1.enrolOnCourse(Computing);
