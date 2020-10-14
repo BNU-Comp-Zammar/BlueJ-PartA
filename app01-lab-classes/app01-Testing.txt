@@ -1,5 +1,48 @@
-LabClass co452Lab = new LabClass(3);
-Student veena = new Student("Veena Patel", "20388712");
-Student gita = new Student("Gita Ralhan", "20844312");
-Student tim = new Student("Tim Lee", "20199812");
-co452Lab.enrollStudent(gita);
+LabClass co452lab = new LabClass(3);
+Student student1 = new Student("Kevin", "1234");
+Student gitaST = new Student("Kevin", "1234");
+Student StudentGita = new Student("Kevin", "1234");
+Student studentDave = new Student("Dave", "3456");
+Student studentKai = new Student("Kai", "1111");
+StudentGita.addCredits(20);
+studentDave.addCredits(20);
+studentKai.addCredits(20);
+StudentGita.print();
+Kevin, student ID: 1234, credits: 20
+    Exception occurred.
+StudentGita.print();
+Kevin, student ID: 1234, credits: 20
+    Exception occurred.
+co452lab.enrollStudent(StudentGita);
+co452lab.enrollStudent(studentDave);
+studentDave.print();
+Dave, student ID: 3456, credits: 20
+    Exception occurred.
+co452lab.enrollStudent(StudentGita);
+Student student1 = new Student("Kevin", "1234");
+student1.print();
+Kevin, student ID: 1234, credits: 0
+LabClass co452 = new LabClass(3);
+Student studentKevin = new Student("Kevin", "1234");
+Student studentDave = new Student("Dave", "3456");
+Student studentKai = new Student("Kai", "1111");
+studentKevin.addCredits(20);
+studentDave.addCredits(20);
+studentKai.addCredits(20);
+co452.setInstructor("Jhon");
+co452.setRoom("G1");
+co452.setTime("1330");
+studentKevin.print();
+Kevin, student ID: 1234, credits: 20
+studentDave.print();
+Dave, student ID: 3456, credits: 20
+studentKai.print();
+Kai, student ID: 1111, credits: 20
+co452.printList();
+Lab class 1330
+Instructor: Jhon   Room: G1
+Class list:
+Number of students: 0
+co452.enrollStudent(studentKevin);
+co452.enrollStudent(studentDave);
+co452.enrollStudent(studentKai);
