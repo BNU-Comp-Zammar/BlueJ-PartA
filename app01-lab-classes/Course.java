@@ -26,6 +26,6 @@ public class Course
     
     public  void print()
     {
-        System.out.println("Couerse: " + title + ", Code No: " + codeNo);
+        System.out.println("Course: " + title + ", Code No: " + codeNo);
     }
 }
