@@ -64,10 +64,30 @@ public class TicketMachine
         }
     }
 
+    public void insert10p()
+    {
+        balance = balance + 10;
+        
+    }
+    
     public void insert20p()
     {
         balance = balance + 20;
+        
     }
+    
+    public void insert100p()
+    {
+        balance = balance + 100;
+        
+    }
+    
+    public void insert200p()
+    {
+        balance = balance + 200;
+        
+    }
+    
     /**
      * Print a ticket if enough money has been inserted, and
      * reduce the current balance by the ticket price. Print
