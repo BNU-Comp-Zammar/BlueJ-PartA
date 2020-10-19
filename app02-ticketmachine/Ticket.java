@@ -17,11 +17,17 @@ public class Ticket
     //This is the date and time the ticket was printed
     private Date timeStamp;
     
-    
     /**
      * Constructor for objects of class Ticket
+     * 
      */
-    public Ticket()
+    public Ticket(String destination, int price)
     {
+        timeStamp = new Date();
+        this.destination = destination;
+        this. price = price; 
+        
     }
+    
+    
 }
