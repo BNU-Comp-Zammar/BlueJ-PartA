@@ -9,7 +9,7 @@
  * @author David J. Barnes and Michael Kölling
  * @version 2016.02.29
  * 
- * Modified by Student Name
+ * Modified by Zammar Baig
  */
 public class TicketMachine
 {
@@ -19,6 +19,8 @@ public class TicketMachine
     private int balance;
     // The total amount of money collected by this machine.
     private int total;
+    
+    private Ticket aylesburyTicket;
 
     /**
      * Create a machine that issues tickets of the given price.
@@ -28,6 +30,8 @@ public class TicketMachine
         this.price = price;
         balance = 0;
         total = 0;
+        
+        aylesburyTicket = new Ticket("Aylesbury" , 220);
     }
 
     /**

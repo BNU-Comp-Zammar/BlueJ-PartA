@@ -29,5 +29,22 @@ public class Ticket
         
     }
     
+    /**
+     * Return the ticket's destination as a string
+     * Not needed
+     */
+    public String getDestination()
+   {
+       return destination;
+   }
     
+    /**
+     * this will print a value but will not return as we do not need a return
+     */
+    public void print()
+    {
+          System.out.println("Ticket to " + destination);
+          System.out.print("cost " + price + "p ");
+          System.out.println("Issued: " + timeStamp);
+    }
 }
