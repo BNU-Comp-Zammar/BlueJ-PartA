@@ -64,25 +64,25 @@ public class TicketMachine
         }
     }
 
-    public void insert10p()
+    public void insertP10()
     {
         balance = balance + 10;
         
     }
     
-    public void insert20p()
+    public void insertP20()
     {
         balance = balance + 20;
         
     }
     
-    public void insert100p()
+    public void insertP100()
     {
         balance = balance + 100;
         
     }
     
-    public void insert200p()
+    public void insertP200()
     {
         balance = balance + 200;
         
