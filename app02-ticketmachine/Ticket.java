@@ -1,7 +1,10 @@
 import java.util.Date;
 
 /**
- * Write a description of class Ticket here.
+ * The ticket is used to create a ticket for the user so that they can travel 
+ * to any one of the 3 destinations being Ayelesbury, Amersham or High Wycombe. 
+ * customer can buy a ticket for 1 of these areas by entering location and price
+ * of ticket.
  *
  * @author (Zammar Baig)
  * @version (0.1 - Monday 19th )
