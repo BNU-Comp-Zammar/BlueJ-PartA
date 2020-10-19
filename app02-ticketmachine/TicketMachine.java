@@ -19,6 +19,10 @@ public class TicketMachine
     private int total;
     
     private Ticket aylesburyTicket;
+    
+    private Ticket amershamTicket;
+    
+    private Ticket highwycombeTicket; 
 
     /**
      * Create a machine that issues tickets of the given price.
@@ -29,6 +33,9 @@ public class TicketMachine
         total = 0;
         
         aylesburyTicket = new Ticket("Aylesbury" , 220);
+        amershamTicket = new Ticket ("Amersham" , 300);
+        highwycombeTicket = new Ticket ("HighWycombe" , 330);
+        
     }
 
     /**
