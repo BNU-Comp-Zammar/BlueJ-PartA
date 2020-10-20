@@ -23,6 +23,8 @@ public class TicketMachine
     private Ticket amershamTicket;
     
     private Ticket highwycombeTicket; 
+    
+    private Ticket selectedTicket;
 
     /**
      * Create a machine that issues tickets of the given price.
@@ -36,8 +38,15 @@ public class TicketMachine
         amershamTicket = new Ticket ("Amersham" , 300);
         highwycombeTicket = new Ticket ("HighWycombe" , 330);
         
+        selectedTicket = null;
+        createTickets();
     }
-
+    
+   public void select AmershamTicket()
+   {
+       
+   }
+   
     /**
      * Return The amount of money already inserted for the
      * next ticket.
@@ -130,4 +139,10 @@ public class TicketMachine
         balance = 0;
         return amountToRefund;
     }
+    
+    public void insert10pcoin() 
+    {
+        balance = balance + 10;
+    }
+    
 }
