@@ -1,0 +1,36 @@
+Ticket ticket1 = new Ticket("Aylesbury", 220);
+Ticket ticket1 = new Ticket("Aylesbury", 220);
+ticket1.print();
+Aylesbury
+Ticket ticket1 = new Ticket("Aylesbury", 220);
+ticket1.print();
+Aylesbury
+220Mon Oct 19 14:55:01 BST 2020
+Ticket ticket1 = new Ticket("ay", 220);
+ticket1.print();
+Ticket to ay
+cost 220p Issued: Mon Oct 19 14:57:27 BST 2020
+Ticket ticket1 = new Ticket("aylesbury", 220);
+ticket1.getDestination()
+    returned String "aylesbury"
+ticket1.print();
+Ticket to aylesbury
+cost 220p Issued: Mon Oct 19 15:12:22 BST 2020
+TicketMachine ticketMa1 = new TicketMachine();
+Ticket ticket1 = new Ticket("high wycombe", 330);
+ticket1.print();
+Ticket to high wycombe
+cost 330p Issued: Mon Oct 19 15:40:31 BST 2020
+Ticket ticket1 = new Ticket("aylesbury", 220);
+ticket1.getDestination()
+    returned String "aylesbury"
+ticket1.print();
+Ticket to aylesbury
+cost 220p Issued: Mon Oct 19 16:28:42 BST 2020
+Ticket ticket1 = new Ticket("ay", 10);
+ticket1.getDestination()
+    returned String "ay"
+Ticket ticket1 = new Ticket("amersham", 300);
+ticket1.print();
+Ticket to amersham
+cost 300p Issued: Tue Oct 20 14:08:51 BST 2020
