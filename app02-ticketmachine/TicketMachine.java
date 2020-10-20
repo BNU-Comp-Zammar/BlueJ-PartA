@@ -34,20 +34,26 @@ public class TicketMachine
         balance = 0;
         total = 0;
         
-        aylesburyTicket = new Ticket("Aylesbury" , 220);
-        amershamTicket = new Ticket ("Amersham" , 300);
-        highwycombeTicket = new Ticket ("HighWycombe" , 330);
-        
         selectedTicket = null;
         createTickets();
     }
-    
-   public void select AmershamTicket()
+     
+   public void selectAmershamTicket()
    {
-       
+       selectedTicket = amershamTicket;
+   }
+    
+   /**
+    * Tickets creating for destinations 
+    */
+   private void createTicket()
+   {
+        aylesburyTicket = new Ticket("Aylesbury" , 220);
+        amershamTicket = new Ticket ("Amersham" , 300);
+        highwycombeTicket = new Ticket ("HighWycombe" , 330); 
    }
    
-    /**
+   /**
      * Return The amount of money already inserted for the
      * next ticket.
      */
@@ -56,7 +62,7 @@ public class TicketMachine
         return balance;
     }
 
-    /**
+   /**
      * Receive an amount of money from a customer.
      * Check that the amount is sensible.
      */
@@ -76,25 +82,31 @@ public class TicketMachine
     public void insertP10()
     {
         balance = balance + 10;
-        
+        printBalance();
     }
     
     public void insertP20()
     {
         balance = balance + 20;
-        
+        printBalance();
     }
     
     public void insertP100()
     {
         balance = balance + 100;
-        
+        printBalance();
     }
     
     public void insertP200()
     {
         balance = balance + 200;
-        
+        printBalance();
+    }
+    
+    public void printBalance()
+    {
+        System.out.prinln(" you have inserted ");
+        System.out.println("current balance = " + balance );
     }
     
     /**
