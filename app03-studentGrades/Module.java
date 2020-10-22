@@ -29,4 +29,8 @@ public class Module
         this.mark = mark; 
     }
     
+    public void print()
+    {
+       System.out.println("Module " + title + " " + codeNo);
+    }
 }
