@@ -22,7 +22,7 @@ public class Course
     /**
      * Constructor for objects of class Course
      */
-    public Course(String title, String code)
+    public Course(String title, String codeNo)
     {
         this.title = title;
         this.codeNo = codeNo;
