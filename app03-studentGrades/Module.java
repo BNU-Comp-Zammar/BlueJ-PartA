@@ -23,6 +23,10 @@ public class Module
         this.codeNo = codeNo;
         mark = 0;
     }
-
-
+      
+    public void awardMark(int mark)
+    {
+        this.mark = mark; 
+    }
+    
 }
