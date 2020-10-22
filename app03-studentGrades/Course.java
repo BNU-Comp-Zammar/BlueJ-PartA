@@ -14,12 +14,17 @@ public class Course
     
     //Methods
     
-
+    private Module module1;
+    private Module module2;
+    private Module module3;
+    private Module module4;
+    
     /**
      * Constructor for objects of class Course
      */
     public Course(String title, String code)
     {
+        
         this.title = title;
         this.codeNo = codeNo;
     } 
