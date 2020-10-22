@@ -1,36 +1,41 @@
-Ticket ticket1 = new Ticket("Aylesbury", 220);
-Ticket ticket1 = new Ticket("Aylesbury", 220);
-ticket1.print();
-Aylesbury
-Ticket ticket1 = new Ticket("Aylesbury", 220);
-ticket1.print();
-Aylesbury
-220Mon Oct 19 14:55:01 BST 2020
-Ticket ticket1 = new Ticket("ay", 220);
-ticket1.print();
-Ticket to ay
-cost 220p Issued: Mon Oct 19 14:57:27 BST 2020
-Ticket ticket1 = new Ticket("aylesbury", 220);
-ticket1.getDestination()
-    returned String "aylesbury"
-ticket1.print();
-Ticket to aylesbury
-cost 220p Issued: Mon Oct 19 15:12:22 BST 2020
 TicketMachine ticketMa1 = new TicketMachine();
-Ticket ticket1 = new Ticket("high wycombe", 330);
-ticket1.print();
-Ticket to high wycombe
-cost 330p Issued: Mon Oct 19 15:40:31 BST 2020
-Ticket ticket1 = new Ticket("aylesbury", 220);
-ticket1.getDestination()
-    returned String "aylesbury"
-ticket1.print();
-Ticket to aylesbury
-cost 220p Issued: Mon Oct 19 16:28:42 BST 2020
-Ticket ticket1 = new Ticket("ay", 10);
-ticket1.getDestination()
-    returned String "ay"
-Ticket ticket1 = new Ticket("amersham", 300);
-ticket1.print();
-Ticket to amersham
-cost 300p Issued: Tue Oct 20 14:08:51 BST 2020
+ticketMa1.printBalance(200);
+ you have inserted 200
+current balance = 0
+ticketMa1.insertP100();
+ you have inserted 100
+current balance = 100
+ticketMa1.insertP200();
+ you have inserted 200
+current balance = 300
+ticketMa1.printTicket();
+##################
+# The BlueJ Line
+# Ticket
+# 220 cents.
+##################
+
+ticketMa1.refundBalance()
+    returned int 80
+TicketMachine ticketMa2 = new TicketMachine();
+ticketMa2.insertP10();
+ you have inserted 10
+current balance = 10
+ticketMa2.insertP10();
+ you have inserted 10
+current balance = 20
+ticketMa2.printBalance(330);
+ you have inserted 330
+current balance = 20
+ticketMa2.printTicket();
+You must insert at least: 200 more cents.
+ticketMa2.insertP200();
+ you have inserted 200
+current balance = 220
+ticketMa2.printTicket();
+##################
+# The BlueJ Line
+# Ticket
+# 220 cents.
+##################
+
