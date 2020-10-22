@@ -13,30 +13,30 @@
  */
 public class TicketMachine
 {
-    // The amount of money entered by a customer so far.
-    private int balance;
-    // The total amount of money collected by this machine.
-    private int total;
+   // The amount of money entered by a customer so far.
+   private int balance;
+   // The total amount of money collected by this machine.
+   private int total;
     
-    private Ticket aylesburyTicket;
+   private Ticket aylesburyTicket;
     
-    private Ticket amershamTicket;
+   private Ticket amershamTicket;
     
-    private Ticket highwycombeTicket; 
+   private Ticket highwycombeTicket; 
     
-    private Ticket selectedTicket;
+   private Ticket selectedTicket;
 
-    /**
+   /**
      * Create a machine that issues tickets of the given price.
      */
     public TicketMachine()
-    {
-        balance = 0;
-        total = 0;
+   {
+       balance = 0;
+       total = 0;
         
-        selectedTicket = null;
-        createTickets();
-    }
+       selectedTicket = null;
+       createTickets();
+   }
      
    public void selectAmershamTicket()
    {
@@ -46,7 +46,7 @@ public class TicketMachine
    /**
     * Tickets creating for destinations 
     */
-   private void createTicket()
+   private void createTickets()
    {
         aylesburyTicket = new Ticket("Aylesbury" , 220);
         amershamTicket = new Ticket ("Amersham" , 300);
@@ -57,59 +57,59 @@ public class TicketMachine
      * Return The amount of money already inserted for the
      * next ticket.
      */
-    public int getBalance()
-    {
-        return balance;
-    }
+   public int getBalance()
+   {
+       return balance;
+   }
 
    /**
      * Receive an amount of money from a customer.
      * Check that the amount is sensible.
      */
     public void insertMoney(int amount)
-    {
-        if(amount > 0) 
-        {
-            balance = balance + amount;
-        }
-        else 
-        {
-            System.out.println("Use a positive amount rather than: " +
-                               amount);
-        }
-    }
+   {
+      if(amount > 0) 
+      {
+         balance = balance + amount;
+      }
+      else 
+      {
+          System.out.println("Use a positive amount rather than: " +
+                  amount);
+      }
+   }
 
-    public void insertP10()
+   public void insertP10()
     {
         balance = balance + 10;
-        printBalance();
+        printBalance(10);
     }
     
-    public void insertP20()
-    {
-        balance = balance + 20;
-        printBalance();
-    }
+   public void insertP20()
+   {
+       balance = balance + 20;
+       printBalance(20);
+   }
     
-    public void insertP100()
+   public void insertP100()
     {
         balance = balance + 100;
-        printBalance();
+        printBalance(100);
     }
     
-    public void insertP200()
+   public void insertP200()
     {
         balance = balance + 200;
-        printBalance();
+        printBalance(200);
     }
     
-    public void printBalance()
+   public void printBalance(int amount)
     {
-        System.out.prinln(" you have inserted ");
+        System.out.println(" you have inserted " + amount );
         System.out.println("current balance = " + balance );
     }
     
-    /**
+   /**
      * Print a ticket if enough money has been inserted, and
      * reduce the current balance by the ticket price. Print
      * an error message if more money is required.
@@ -140,7 +140,7 @@ public class TicketMachine
         }
     }
 
-    /**
+   /**
      * Return the money in the balance.
      * The balance is cleared.
      */
@@ -152,9 +152,8 @@ public class TicketMachine
         return amountToRefund;
     }
     
-    public void insert10pcoin() 
+   public void insert10pcoin() 
     {
         balance = balance + 10;
     }
-    
 }
