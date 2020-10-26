@@ -1,6 +1,10 @@
 
 /**
- * 
+ * The course class tells us about the modules that are avalible and it 
+ * also has a field which helps us link the the grades and work out the average
+ * mark. If by accident someone dosent select 1 of 4 modules the system will 
+ * print out an error message to let them know of their mistake and to rectify
+ * it.
  *
  * @author Zammar Baig
  * @version 0.1
