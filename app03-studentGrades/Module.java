@@ -28,15 +28,24 @@ public class Module
       
     public void awardMark(int mark)
     {
-        if ((mark>= 0 ) && (mark <=100))
-        {
-            this.mark = mark; 
-            if(mark > 40) completed = true;
-        }    
-    }
-    
-    public void print()
-    {
+      if ((mark >= 0 ) && (mark <= 100))
+      {
+         this.mark = mark; 
+         if(mark > 40) completed = true;
+      
+      }
+      else
+      {
+         System.out.print("Invalid mark!!!"); 
+      }
+      
+    }     
+       
+    p
+     
+      public void print(); 
+      {
        System.out.println("Module " + title + " " + codeNo);
+      }
     }
-}
+}   
