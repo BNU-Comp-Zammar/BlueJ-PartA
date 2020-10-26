@@ -7,12 +7,13 @@
  */
 public class Module
 {
-    //Fields
     private String title; 
     
     private String codeNo; 
     
     private int mark; 
+    
+    private boolean completed; 
     
     /**
      * Constructor for objects of class Module
@@ -22,11 +23,16 @@ public class Module
         this.title = title;
         this.codeNo = codeNo;
         mark = 0;
+        completed = false;
     }
       
     public void awardMark(int mark)
     {
-        this.mark = mark; 
+        if ((mark>= 0 ) && (mark <=100))
+        {
+            this.mark = mark; 
+            if(mark > 40) completed = true;
+        }    
     }
     
     public void print()
