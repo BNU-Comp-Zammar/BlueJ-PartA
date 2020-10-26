@@ -115,9 +115,30 @@ public class Course
     
     public void calculateGrade()
     {
-        if(averageMark >= 0 & averageMark < 40)
+        if(averageMark >= 0 & averageMark < 39)
         {
             grade = Grades.F;
         }
+        
+        if (averageMark >= 40 & averageMark < 49)
+        {
+            grade = Grades.D;
+        }
+        
+        if (averageMark >= 50 & averageMark < 59)
+        {
+            grade = Grades.C;
+        }
+        
+        if (averageMark >= 60 & averageMark < 69)
+        {
+            grade = Grades.B;
+        }
+        
+        if (averageMark >= 70 & averageMark < 100)
+        {
+            grade = Grades.A;
+        }
     }
+    
 }
