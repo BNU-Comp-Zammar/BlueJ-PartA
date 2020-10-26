@@ -1,6 +1,8 @@
 
 /**
- * Write a description of class Module here.
+ * This class will tell us about the marks that each student has achieved in 
+ * work. The code read out 'if mark is greated than 40 = true but if mark is 
+ * less than 40 the system will print out a line which says "Invalid Mark!!!"
  *
  * @author (ZAMMAR BAIG)
  * @version (version1)
