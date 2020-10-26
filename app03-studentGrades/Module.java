@@ -41,11 +41,14 @@ public class Module
       
     }     
        
-    p
-     
-      public void print(); 
-      {
-       System.out.println("Module " + title + " " + codeNo);
-      }
+    public int getMark()
+    {
+        return mark;
     }
-}   
+    
+    public void print()
+    {
+        System.out.println("module: " + codeNo +
+            "" + title + " Mark = " + mark);
+    }
+}  
