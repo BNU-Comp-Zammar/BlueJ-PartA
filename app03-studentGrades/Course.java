@@ -58,7 +58,7 @@ public class Course
         }
         else
         {
-            
+           System.out.print("Invalid module!!!");
         }
     }
     
@@ -69,5 +69,13 @@ public class Course
         module2.print();
         module3.print();
         module4.print();
+    }
+    
+    public void awardmark(int mark, int moduleNo)
+    {
+        if(moduleNo ==1)
+        {
+            module1.awardMark(mark);
+        }
     }
 }
