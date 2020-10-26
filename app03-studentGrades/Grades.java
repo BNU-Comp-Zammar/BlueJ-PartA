@@ -2,7 +2,7 @@
  * Enumeration class Grades - write a description of the enum class here
  *
  * @author (Zammar Baig)
- * @version (version number or date here)
+ * @version (0.1)
  */
 public enum Grades
 {
