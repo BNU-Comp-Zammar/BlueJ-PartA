@@ -1,0 +1,40 @@
+Student student1 = new Student("Bob", "1122");
+Course course1 = new Course("Programming", "G400");
+Student student1 = new Student("Bob", "1234");
+Course course1 = new Course("AI", "CO41");
+student1.print();
+Bob, student ID: 1234, credits: 0
+student1.enrollOnCourse(course1);
+Module module1 = new Module("Programming", "CO452");
+module1.print();
+module: CO452Programming Mark = 0
+student1.print();
+Bob, student ID: 1234, credits: 0
+module1.awardMark(39);
+Module module2 = new Module("Computing", "G100");
+Module module3 = new Module("Global Business", "BM454");
+Module module4 = new Module("Web Development", "CO454");
+course1.calculateGrade();
+course1.print();
+Course: AI, Code No: CO41
+module: CO452Programming Concepts Mark = 0
+module: G100Computing Mark = 0
+module: BM454Global Business Mark = 0
+module: CO454Web Development Mark = 0
+module1.getMark()
+    returned int 39
+module2.getMark()
+    returned int 0
+module2.awardMark(41);
+module2.getMark()
+    returned int 41
+module3.awardMark(17);
+module4.awardMark(89);
+course1.calculateFinalMark();
+course1.calculateGrade();
+student1.print();
+Bob, student ID: 1234, credits: 0
+student1.addCredits(20);
+student1.enrollOnCourse(course1);
+course1.addModule(module1, 20);
+Invalid module!!!
