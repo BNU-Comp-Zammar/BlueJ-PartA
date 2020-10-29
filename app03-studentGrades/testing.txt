@@ -1,0 +1,41 @@
+Course course1 = new Course("web", "1234");
+course1.calculateFinalMark();
+course1.calculateGrade();
+course1.print();
+Course: web, Code No: 1234
+module: CO452Programming Concepts Mark = 0
+module: G100Computing Mark = 0
+module: BM454Global Business Mark = 0
+module: CO454Web Development Mark = 0
+Final Mark = 0
+Final Grade = F
+course1.awardmark(50, 1234);
+course1.awardmark(50, 1);
+course1.awardmark(60, 2);
+course1.awardmark(50, 3);
+course1.awardmark(60, 4);
+course1.calculateFinalMark();
+course1.calculateGrade();
+course1.print();
+Course: web, Code No: 1234
+module: CO452Programming Concepts Mark = 50
+module: G100Computing Mark = 60
+module: BM454Global Business Mark = 50
+module: CO454Web Development Mark = 60
+Final Mark = 55
+Final Grade = C
+Student student1 = new Student("bob", "1234");
+student1.print();
+bob, student ID: 1234, credits: 0
+    Exception occurred.
+Course course1 = new Course("web", "1234");
+student1.enrollOnCourse(course1);
+student1.print();
+bob, student ID: 1234, credits: 0
+Course: web, Code No: 1234
+module: CO452Programming Concepts Mark = 0
+module: G100Computing Mark = 0
+module: BM454Global Business Mark = 0
+module: CO454Web Development Mark = 0
+Final Mark = 0
+Final Grade = null
