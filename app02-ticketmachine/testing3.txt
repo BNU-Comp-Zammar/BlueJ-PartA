@@ -1,0 +1,31 @@
+TicketMachine machine1 = new TicketMachine();
+machine1.insertMoney(1000);
+machine1.selectAylesburyTicket();
+machine1.printTicket();
+##################
+# The BlueJ Line
+# Ticket
+Ticket to Aylesbury
+cost 220p Issued: Thu Oct 29 13:48:38 GMT 2020
+##################
+
+machine1.selectAmershamTicket();
+machine1.printTicket();
+##################
+# The BlueJ Line
+# Ticket
+Ticket to Amersham
+cost 300p Issued: Thu Oct 29 13:48:38 GMT 2020
+##################
+
+machine1.selectHighWycombeTicket();
+machine1.printTicket();
+##################
+# The BlueJ Line
+# Ticket
+Ticket to HighWycombe
+cost 330p Issued: Thu Oct 29 13:48:38 GMT 2020
+##################
+
+machine1.refundBalance()
+    returned int 150
