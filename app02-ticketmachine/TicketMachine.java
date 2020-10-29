@@ -126,14 +126,14 @@ public class TicketMachine
      */
     public void printTicket()
     {
-        int price = 220;// todo must come from ticket 
+        int price = selectedTicket.getPrice();// todo must come from ticket 
         if(balance >= price) 
         {
             // Simulate the printing of a ticket.
             System.out.println("##################");
             System.out.println("# The BlueJ Line");
             System.out.println("# Ticket");
-            System.out.println("# " + price + " cents.");
+            selectedTicket.print();
             System.out.println("##################");
             System.out.println();
 
@@ -174,4 +174,6 @@ public class TicketMachine
        amershamTicket.print();
        highWycombeTicket.print();
    }
+   
+   
 }
