@@ -22,7 +22,7 @@ public class TicketMachine
     
    private Ticket amershamTicket;
     
-   private Ticket highwycombeTicket; 
+   private Ticket highWycombeTicket; 
     
    private Ticket selectedTicket;
 
@@ -42,6 +42,16 @@ public class TicketMachine
    {
        selectedTicket = amershamTicket;
    }
+   
+   public void selectAylesburyTicket()
+   {
+       selectedTicket = aylesburyTicket;
+   }
+   
+   public void selectHighWycombeTicket()
+   {
+       selectedTicket = highWycombeTicket;
+   }
     
    /**
     * Tickets creating for destinations 
@@ -50,7 +60,7 @@ public class TicketMachine
    {
         aylesburyTicket = new Ticket("Aylesbury" , 220);
         amershamTicket = new Ticket ("Amersham" , 300);
-        highwycombeTicket = new Ticket ("HighWycombe" , 330); 
+        highWycombeTicket = new Ticket ("HighWycombe" , 330); 
    }
    
    /**
@@ -156,4 +166,12 @@ public class TicketMachine
     {
         balance = balance + 10;
     }
+   
+   public void printAll()
+   {
+       System.out.println("The following Tickets are avalible");
+       aylesburyTicket.print();
+       amershamTicket.print();
+       highWycombeTicket.print();
+   }
 }
