@@ -50,4 +50,9 @@ public class Ticket
           System.out.print("cost " + price + "p ");
           System.out.println("Issued: " + timeStamp);
     }
+    
+   public int getPrice()
+   {
+        return price;
+   }
 }
