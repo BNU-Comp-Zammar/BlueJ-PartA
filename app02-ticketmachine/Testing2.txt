@@ -1,0 +1,23 @@
+TicketMachine machine1 = new TicketMachine();
+machine1.insertP200();
+ you have inserted 200
+current balance = 200
+machine1.insertP100();
+ you have inserted 100
+current balance = 300
+machine1.insertP20();
+ you have inserted 20
+current balance = 320
+machine1.insertP10();
+ you have inserted 10
+current balance = 330
+machine1.selectAmershamTicket();
+machine1.printTicket();
+##################
+# The BlueJ Line
+# Ticket
+# 220 cents.
+##################
+
+machine1.printTicket();
+You must insert at least: 110 more cents.
