@@ -19,9 +19,16 @@ public class StockDemo
     {
         this.manager = manager;
         
-        manager.addProduct(new Product(132, "Clock Radio"));
-        manager.addProduct(new Product(37,  "Mobile Phone"));
-        manager.addProduct(new Product(23,  "Microwave Oven"));
+        manager.addProduct(new Product(101, "Apple iPhone 12"));
+        manager.addProduct(new Product(102,  "Samsung Galaxy S20"));
+        manager.addProduct(new Product(103,  "Google Pixel 4A"));
+        manager.addProduct(new Product(104,  " Apple Mac"));
+        manager.addProduct(new Product(105,  "Microsoft Surface"));
+        manager.addProduct(new Product(106,  " Microsoft XP"));
+        manager.addProduct(new Product(107,  " Apple iPad Air"));
+        manager.addProduct(new Product(108,  " Dell Latitude"));
+        manager.addProduct(new Product(109,  " Lenova ThinkPad"));
+        manager.addProduct(new Product(110,  " Samsung Galaxy S3"));
     }
     
     /**
