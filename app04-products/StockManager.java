@@ -45,7 +45,7 @@ public class StockManager
         }
         else
         {
-            System.out.println("Product NOT FOUND!!!");
+            System.out.println("Product ID " + id + " NOT FOUND!!!");
         }
     }
     
