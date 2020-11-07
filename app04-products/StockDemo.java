@@ -1,10 +1,11 @@
 /**
- * Demonstrate the StockManager and Product classes.
- * The demonstration becomes properly functional as
- * the StockManager class is completed.
+ * The StockDemo will have all the stock written in it with its
+ * unique ID number which will make the product easier to locate
+ * there is also a findProduct method here which will help to locate
+ * a product without too much hassle.
  * 
- * @author David J. Barnes and Michael Kölling.
- * @version 2016.02.29
+ * @author Zammar Baig
+ * @version 1
  */
 public class StockDemo
 {
@@ -19,10 +20,10 @@ public class StockDemo
     {
         this.manager = manager;
         
-        manager.addProduct(new Product(101, "Apple iPhone 12"));
+        manager.addProduct(new Product(101,  "Apple iPhone 12"));
         manager.addProduct(new Product(102,  "Samsung Galaxy S20"));
         manager.addProduct(new Product(103,  "Google Pixel 4A"));
-        manager.addProduct(new Product(104,  " Apple Mac"));
+        manager.addProduct(new Product(104,  "Apple Mac"));
         manager.addProduct(new Product(105,  "Microsoft Surface"));
         manager.addProduct(new Product(106,  " Microsoft XP"));
         manager.addProduct(new Product(107,  " Apple iPad Air"));
