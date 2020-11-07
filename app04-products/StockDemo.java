@@ -51,16 +51,16 @@ public class StockDemo
         // Show details of all of the products.
         manager.printAllProducts();
         // Delivery of products
-        manager.deliverProduct(101, 5);
-        manager.deliverProduct(102, 4);
-        manager.deliverProduct(103, 7);
-        manager.deliverProduct(104, 12);
-        manager.deliverProduct(105, 2);
-        manager.deliverProduct(106, 16);
-        manager.deliverProduct(107, 1);
-        manager.deliverProduct(108, 14);
-        manager.deliverProduct(109, 3);
-        manager.deliverProduct(110, 2);
+        manager.deliverProduct(101, 10);
+        manager.deliverProduct(102, 10);
+        manager.deliverProduct(103, 10);
+        manager.deliverProduct(104, 10);
+        manager.deliverProduct(105, 10);
+        manager.deliverProduct(106, 10);
+        manager.deliverProduct(107, 10);
+        manager.deliverProduct(108, 10);
+        manager.deliverProduct(109, 10);
+        manager.deliverProduct(110, 10);
         manager.printAllProducts();
     }
     
