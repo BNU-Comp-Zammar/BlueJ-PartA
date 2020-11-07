@@ -13,8 +13,7 @@ public class StockDemo
     private StockManager manager;
     
     /**
-     * Create a StockManager and populate it with a few
-     * sample products.
+     * all products have been listed below
      */
     public StockDemo(StockManager manager)
     {
@@ -40,7 +39,6 @@ public class StockDemo
     {
        manager.printAllProducts();
        demoDeliverProducts();
-       
     }
     
     /**
@@ -52,17 +50,17 @@ public class StockDemo
     {
         // Show details of all of the products.
         manager.printAllProducts();
-        // Take delivery of 5 items of one of the products.
-        manager.delivery(101, 5);
-        manager.delivery(102, 4);
-        manager.delivery(103, 7);
-        manager.delivery(104, 12);
-        manager.delivery(105, 2);
-        manager.delivery(106, 16);
-        manager.delivery(107, 1);
-        manager.delivery(108, 14);
-        manager.delivery(109, 3);
-        manager.delivery(110, 2);
+        // Delivery of products
+        manager.deliverProduct(101, 5);
+        manager.deliverProduct(102, 4);
+        manager.deliverProduct(103, 7);
+        manager.deliverProduct(104, 12);
+        manager.deliverProduct(105, 2);
+        manager.deliverProduct(106, 16);
+        manager.deliverProduct(107, 1);
+        manager.deliverProduct(108, 14);
+        manager.deliverProduct(109, 3);
+        manager.deliverProduct(110, 2);
         manager.printAllProducts();
     }
     
