@@ -33,11 +33,22 @@ public class StockDemo
     }
     
     /**
+     * This method will run the test needed to show that products can
+     * be delivered. This method meets the requirements.
+     */
+    public void runDemo()
+    {
+       manager.printAllProducts();
+       demoDeliverProducts();
+       
+    }
+    
+    /**
      * Provide a very simple demonstration of how a StockManager
      * might be used. Details of one product are shown, the
      * product is restocked, and then the details are shown again.
      */
-    public void demo()
+    private void demoDeliverProducts()
     {
         // Show details of all of the products.
         manager.printAllProducts();
