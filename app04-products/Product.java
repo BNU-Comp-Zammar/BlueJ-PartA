@@ -1,8 +1,9 @@
 /**
- * Model some details of a product sold by a company.
+ * mehtods here will show us what the company holds and what happens
+ * if wrong things are inputted.
  * 
- * @author David J. Barnes and Michael Kölling.
- * @version 2016.02.29
+ * @author Zammar
+ * @version 1
  */
 public class Product
 {
