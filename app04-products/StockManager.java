@@ -58,12 +58,21 @@ public class StockManager
     public void sellProduct(int id, int amount)
     {
         Product product = findProduct(id);
-        
         if(product != null) 
         {
             printDetails(id);
             product.sell(amount);
             printDetails(id);
+        }
+    }
+    
+    public void removeProduct(int id)
+    {
+        Product product = findProduct(id);
+        if(product != null) 
+        {
+            System.out.println("Removing product " + product);
+            stock.remove(product);
         }
     }
     
