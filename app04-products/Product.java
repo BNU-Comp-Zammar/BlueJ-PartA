@@ -82,11 +82,18 @@ public class Product
      * Sell one of these products.
      * An error is reported if there appears to be no stock.
      */
-    public void sellOne()
+    public void sell(int amount)
     {
         if(quantity > 0) 
         {
-            quantity--;
+            if(amount > quantity)
+            {
+                quantity = 0;
+            }
+            else
+            {
+                quantity = quantity - amount;
+            }
         }
         else 
         {
