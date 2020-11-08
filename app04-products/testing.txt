@@ -1,6 +1,6 @@
 StockManager stock = new StockManager();
 StockDemo stockDem1 = new StockDemo(stock);
-stock.printAllProducts();
+stockDem1.runDemo();
 101: Apple iPhone 12 stock level: 0
 102: Samsung Galaxy S20 stock level: 0
 103: Google Pixel 4A stock level: 0
@@ -11,76 +11,79 @@ stock.printAllProducts();
 108:  Dell Latitude stock level: 0
 109:  Lenova ThinkPad stock level: 0
 110:  Samsung Galaxy S3 stock level: 0
+101: Apple iPhone 12 stock level: 0
+102: Samsung Galaxy S20 stock level: 0
+103: Google Pixel 4A stock level: 0
+104: Apple Mac stock level: 0
+105: Microsoft Surface stock level: 0
+106:  Microsoft XP stock level: 0
+107:  Apple iPad Air stock level: 0
+108:  Dell Latitude stock level: 0
+109:  Lenova ThinkPad stock level: 0
+110:  Samsung Galaxy S3 stock level: 0
+Product Delivered : 101: Apple iPhone 12 stock level: 13
+Product Delivered : 102: Samsung Galaxy S20 stock level: 10
+Product Delivered : 103: Google Pixel 4A stock level: 7
+Product Delivered : 104: Apple Mac stock level: 3
+Product Delivered : 105: Microsoft Surface stock level: 22
+Product Delivered : 106:  Microsoft XP stock level: 21
+Product Delivered : 107:  Apple iPad Air stock level: 17
+Product Delivered : 108:  Dell Latitude stock level: 5
+Product Delivered : 109:  Lenova ThinkPad stock level: 1
+Product Delivered : 110:  Samsung Galaxy S3 stock level: 14
+101: Apple iPhone 12 stock level: 13
+102: Samsung Galaxy S20 stock level: 10
+103: Google Pixel 4A stock level: 7
+104: Apple Mac stock level: 3
+105: Microsoft Surface stock level: 22
+106:  Microsoft XP stock level: 21
+107:  Apple iPad Air stock level: 17
+108:  Dell Latitude stock level: 5
+109:  Lenova ThinkPad stock level: 1
+110:  Samsung Galaxy S3 stock level: 14
+
+Demo of Selling
+
+101: Apple iPhone 12 stock level: 13
+101: Apple iPhone 12 stock level: 12
+102: Samsung Galaxy S20 stock level: 10
+102: Samsung Galaxy S20 stock level: 8
+103: Google Pixel 4A stock level: 7
+103: Google Pixel 4A stock level: 4
+104: Apple Mac stock level: 3
+104: Apple Mac stock level: 0
+105: Microsoft Surface stock level: 22
+105: Microsoft Surface stock level: 17
+106:  Microsoft XP stock level: 21
+106:  Microsoft XP stock level: 15
+107:  Apple iPad Air stock level: 17
+107:  Apple iPad Air stock level: 10
+108:  Dell Latitude stock level: 5
+108:  Dell Latitude stock level: 0
+109:  Lenova ThinkPad stock level: 1
+109:  Lenova ThinkPad stock level: 0
+110:  Samsung Galaxy S3 stock level: 14
+110:  Samsung Galaxy S3 stock level: 4
+Removing product 104: Apple Mac stock level: 0
+stock.numberInStock(102)
+    returned int 0
+stock.removeProduct(103);
+Removing product 103: Google Pixel 4A stock level: 4
+stock.sellProduct(103, 2);
+stock.sellProduct(109, 1);
+109:  Lenova ThinkPad stock level: 0
+Attempt to sell an out of stock item:  Lenova ThinkPad
+109:  Lenova ThinkPad stock level: 0
+stockDem1.demoRemoveProduct();
+stock.removeProduct(102);
+Removing product 102: Samsung Galaxy S20 stock level: 8
 stockDem1.getProduct(101)
     returned Object <object reference>
-stock.findProduct(102)
-    returned Object <object reference>
-stock.numberInStock(105)
-    returned int 0
-stock.deliverProduct(105, 10);
-Product Delivered : 105: Microsoft Surface stock level: 10
-stock.sellProduct(105);
-105: Microsoft Surface stock level: 10
-105: Microsoft Surface stock level: 9
-stock.printDetails(106);
-106:  Microsoft XP stock level: 0
-stock.deliverProduct(106, 1);
-Product Delivered : 106:  Microsoft XP stock level: 1
-stockDem1.runDemo();
-101: Apple iPhone 12 stock level: 0
-102: Samsung Galaxy S20 stock level: 0
-103: Google Pixel 4A stock level: 0
-104: Apple Mac stock level: 0
-105: Microsoft Surface stock level: 9
-106:  Microsoft XP stock level: 1
-107:  Apple iPad Air stock level: 0
-108:  Dell Latitude stock level: 0
-109:  Lenova ThinkPad stock level: 0
-110:  Samsung Galaxy S3 stock level: 0
-101: Apple iPhone 12 stock level: 0
-102: Samsung Galaxy S20 stock level: 0
-103: Google Pixel 4A stock level: 0
-104: Apple Mac stock level: 0
-105: Microsoft Surface stock level: 9
-106:  Microsoft XP stock level: 1
-107:  Apple iPad Air stock level: 0
-108:  Dell Latitude stock level: 0
-109:  Lenova ThinkPad stock level: 0
-110:  Samsung Galaxy S3 stock level: 0
-Product Delivered : 101: Apple iPhone 12 stock level: 10
-Product Delivered : 102: Samsung Galaxy S20 stock level: 10
-Product Delivered : 103: Google Pixel 4A stock level: 10
-Product Delivered : 104: Apple Mac stock level: 10
-Product Delivered : 105: Microsoft Surface stock level: 19
-Product Delivered : 106:  Microsoft XP stock level: 11
-Product Delivered : 107:  Apple iPad Air stock level: 10
-Product Delivered : 108:  Dell Latitude stock level: 10
-Product Delivered : 109:  Lenova ThinkPad stock level: 10
-Product Delivered : 110:  Samsung Galaxy S3 stock level: 10
-101: Apple iPhone 12 stock level: 10
-102: Samsung Galaxy S20 stock level: 10
-103: Google Pixel 4A stock level: 10
-104: Apple Mac stock level: 10
-105: Microsoft Surface stock level: 19
-106:  Microsoft XP stock level: 11
-107:  Apple iPad Air stock level: 10
-108:  Dell Latitude stock level: 10
-109:  Lenova ThinkPad stock level: 10
-110:  Samsung Galaxy S3 stock level: 10
-stock.sellProduct(106-109);
-stock.deliverProduct(120, 5);
-Product ID 120 NOT FOUND!!!
 stock.printAllProducts();
-101: Apple iPhone 12 stock level: 10
-102: Samsung Galaxy S20 stock level: 10
-103: Google Pixel 4A stock level: 10
-104: Apple Mac stock level: 10
-105: Microsoft Surface stock level: 19
-106:  Microsoft XP stock level: 11
+101: Apple iPhone 12 stock level: 12
+105: Microsoft Surface stock level: 17
+106:  Microsoft XP stock level: 15
 107:  Apple iPad Air stock level: 10
-108:  Dell Latitude stock level: 10
-109:  Lenova ThinkPad stock level: 10
-110:  Samsung Galaxy S3 stock level: 10
-stock.sellProduct(106);
-106:  Microsoft XP stock level: 11
-106:  Microsoft XP stock level: 10
+108:  Dell Latitude stock level: 0
+109:  Lenova ThinkPad stock level: 0
+110:  Samsung Galaxy S3 stock level: 4
