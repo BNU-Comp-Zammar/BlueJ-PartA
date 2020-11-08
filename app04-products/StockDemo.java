@@ -39,6 +39,8 @@ public class StockDemo
     {
        manager.printAllProducts();
        demoDeliverProducts();
+       demoSellProducts();
+       demoRemoveProduct();
     }
     
     /**
@@ -51,19 +53,34 @@ public class StockDemo
         // Show details of all of the products.
         manager.printAllProducts();
         // Delivery of products
-        manager.deliverProduct(101, 10);
+        manager.deliverProduct(101, 13);
         manager.deliverProduct(102, 10);
-        manager.deliverProduct(103, 10);
-        manager.deliverProduct(104, 10);
-        manager.deliverProduct(105, 10);
-        manager.deliverProduct(106, 10);
-        manager.deliverProduct(107, 10);
-        manager.deliverProduct(108, 10);
-        manager.deliverProduct(109, 10);
-        manager.deliverProduct(110, 10);
+        manager.deliverProduct(103, 7);
+        manager.deliverProduct(104, 3);
+        manager.deliverProduct(105, 22);
+        manager.deliverProduct(106, 21);
+        manager.deliverProduct(107, 17);
+        manager.deliverProduct(108, 5);
+        manager.deliverProduct(109, 1);
+        manager.deliverProduct(110, 14);
         manager.printAllProducts();
     }
     
+    public void demoSellProducts()
+    {
+        System.out.println("\nDemo of Selling\n");
+        int amount = 0;
+        
+        for(int id = 101; id <= 110; id++)
+        {
+            amount++;
+            manager.sellProduct(id, amount);
+        }
+    }
+    
+    public void demoRemoveProduct()
+    {
+    }
     /**
      * Get the product with the given id from the manager.
      * An error message is printed if there is no match.
