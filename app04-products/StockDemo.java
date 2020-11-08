@@ -80,7 +80,9 @@ public class StockDemo
     
     public void demoRemoveProduct()
     {
+        manager.removeProduct(104);
     }
+    
     /**
      * Get the product with the given id from the manager.
      * An error message is printed if there is no match.
