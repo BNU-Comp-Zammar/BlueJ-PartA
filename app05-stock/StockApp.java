@@ -16,6 +16,8 @@ public class StockApp
     
     private StockManager manager = new StockManager();
     
+    private StockDemo demo;
+    
     private int nextID = FIRST_ID;
     
     /**
@@ -25,6 +27,7 @@ public class StockApp
     {
         input = new InputReader();
         manager = new StockManager();
+        demo = new StockDemo(manager);
     }
 
     /**
