@@ -50,6 +50,27 @@ public class StockManager
         }
     }
     
+        /**
+     * Receive a delivery of a particular product.
+     * Increase the quantity of the product by the given amount.
+     * @param id The ID of the product.
+     * @param amount The amount to increase the quantity by.
+     */
+    public void removeProduct(int id)
+    {
+        Product product = findProduct (id);
+        
+        if(product != null)
+        {
+            stock.remove(product);
+            System.out.println("\nProduct " + product + " removed!\n");
+        }
+        else
+        {
+            System.out.println("Product ID " + id + " NOT FOUND!!!");
+        }
+    }
+    
     /**
      * Sell one of the given item.
      * Show the before and after status of the product.
@@ -63,16 +84,6 @@ public class StockManager
             printDetails(id);
             product.sell(amount);
             printDetails(id);
-        }
-    }
-    
-    public void removeProduct(int id)
-    {
-        Product product = findProduct(id);
-        if(product != null) 
-        {
-            System.out.println("Removing product " + product);
-            stock.remove(product);
         }
     }
     
