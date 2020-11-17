@@ -42,6 +42,7 @@ public class StockApp
             String choice = input.getInput();
             choice = choice.toLowerCase();
             
+            executeMenuChoice(choice);
             if(choice.equals("quit"))
                 finished = true;
         }
@@ -56,6 +57,10 @@ public class StockApp
         if(choice.equals("add"))
         {
            addProduct();
+        }
+        else if(choice.equals("remove"))
+        {
+           removeProducts();
         }
         else if(choice.equals("printall"))
         {
@@ -73,7 +78,23 @@ public class StockApp
         
         Product product = new Product(nextID, name);
         manager.addProduct(product);
+        
+        System.out.println("\nAdded " + product + " to the stock\n");
+        nextID++;
     }
+    
+    public void removeProducts()
+    {
+        System.out.println("Remove an old Product");
+        System.out.println();
+        
+        System.out.println("Please enter the id of the product");
+        String number = input.getInput();
+        
+        int id = Integer.parseInt(number);
+        manager.removeProduct(id);
+    }   
+
     
     /**
      * Print out a menu of operation choices
