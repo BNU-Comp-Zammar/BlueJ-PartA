@@ -9,10 +9,14 @@
  */
 public class StockApp
 {
+    public final int First_ID = 200;
+    
     // Use to get user input
     private InputReader input;
     
     private StockManager manager = new StockManager();
+    
+    private int nextID = FIRST_ID;
     
     /**
      * Constructor for objects of class StockApp
@@ -51,8 +55,19 @@ public class StockApp
     {
         if(choice.equals("add"))
         {
-            
+           addProduct();
         }
+    }
+    
+    public void addProduct()
+    {
+        System.out.println("Add a new Product");
+        System.out.println();
+        
+        System.out.println("Please enter the name of the product");
+        
+        Product product = new Product(id, "Name");
+        manager.addProduct(product)
     }
     
     /**
