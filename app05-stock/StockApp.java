@@ -4,7 +4,7 @@
  * stock manager so that users can add, edit,
  * print and remove stock products
  *
- * @author Student Name
+ * @author Zammar
  * @version 0.1
  */
 public class StockApp
@@ -25,7 +25,6 @@ public class StockApp
      */
     public void run()
     {
-        printHeading();
         getMenuChoice();
     }
     
@@ -42,7 +41,9 @@ public class StockApp
             printMenuChoices();
            
             String choice = input.getInput();
-            finished = true;
+            
+            if(choice.equals("quit"))
+                finished = true;
         }
     }
     
@@ -67,7 +68,7 @@ public class StockApp
     {
         System.out.println("******************************");
         System.out.println(" Stock Management Application ");
-        System.out.println("    App05: by Student Name");
+        System.out.println("    App05: by Zammar Baig");
         System.out.println("******************************");
     }
 }
