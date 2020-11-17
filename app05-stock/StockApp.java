@@ -9,7 +9,7 @@
  */
 public class StockApp
 {
-    public final int First_ID = 200;
+    public final int FIRST_ID = 200;
     
     // Use to get user input
     private InputReader input;
@@ -65,9 +65,10 @@ public class StockApp
         System.out.println();
         
         System.out.println("Please enter the name of the product");
+        String name = input.getInput();
         
-        Product product = new Product(id, "Name");
-        manager.addProduct(product)
+        Product product = new Product(nextID, name);
+        manager.addProduct(product);
     }
     
     /**
