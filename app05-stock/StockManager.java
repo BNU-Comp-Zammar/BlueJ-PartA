@@ -126,9 +126,18 @@ public class StockManager
      */
     public void printAllProducts()
     {
-        for(Product product : stock)
+        if(stock.size() == 0)
         {
-            System.out.println(product);
+            System.out.println("Currently you have no stock!");
         }
+        else
+        {       
+            for(Product product : stock)
+            {
+                System.out.println(product);
+            }
+        }
+        
+        System.out.println();
     }
-}
+}    
