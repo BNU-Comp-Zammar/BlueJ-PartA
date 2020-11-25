@@ -82,17 +82,23 @@ public class StockApp
         boolean isDuplicate = manager. isDuplicateID(nextID);
         if(isDuplicate)
         {
+            boolean finished = false;
             
+            while(!finished)
+            {
+                nextID++;
+                if(manager.isDuplicateID(nextID))
+                {
+                    finished = true;
+                }
+            }
         }
-        else
-        {
-           Product product = new Product(nextID, name);
-           manager.addProduct(product);
         
-           System.out.println("\nAdded " + product + " to the stock\n");
-           nextID++; 
-        }
+        Product product = new Product(nextID, name);
+        manager.addProduct(product);
         
+        System.out.println("\nAdded " + product + " to the stock\n");
+        nextID++; 
         
     }
     
