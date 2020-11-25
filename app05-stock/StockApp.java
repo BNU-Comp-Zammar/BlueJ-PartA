@@ -79,11 +79,21 @@ public class StockApp
         System.out.println("Please enter the name of the product");
         String name = input.getInput();
         
-        Product product = new Product(nextID, name);
-        manager.addProduct(product);
+        boolean isDuplicate = manager. isDuplicateID(nextID);
+        if(isDuplicate)
+        {
+            
+        }
+        else
+        {
+           Product product = new Product(nextID, name);
+           manager.addProduct(product);
         
-        System.out.println("\nAdded " + product + " to the stock\n");
-        nextID++;
+           System.out.println("\nAdded " + product + " to the stock\n");
+           nextID++; 
+        }
+        
+        
     }
     
     public void removeProducts()
