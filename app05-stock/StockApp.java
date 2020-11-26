@@ -56,13 +56,11 @@ public class StockApp
         while(!finished)
         {
             printHeading();
-            printMenuChoices();
-           
-            String choice = input.getInput();
-            choice = choice.toLowerCase();
             
+            String choice = Menu.getMenuChoice(menuChoices);
             executeMenuChoice(choice);
-            if(choice.equals("quit"))
+            
+            if(choice.startsWith("quit"))
                 finished = true;
         }
     }
