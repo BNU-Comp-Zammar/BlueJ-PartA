@@ -21,6 +21,8 @@ public class StockApp
     
     private int nextID = FIRST_ID;
     
+    private String [] menuChoices;
+    
     /**
      * Constructor for objects of class StockApp
      */
@@ -29,8 +31,21 @@ public class StockApp
         input = new InputReader();
         manager = new StockManager();
         demo = new StockDemo(manager);
+        
+        setUpMenu();
     }
-
+    
+    private void setUpMenu()
+    {
+        menuChoices = new String []
+        {
+            "Add a new product",
+            "Remove an old product",
+            "Print all products",
+            "Quit the program"
+        };
+    }
+    
     /**
      * 
      */
