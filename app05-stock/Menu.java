@@ -20,16 +20,28 @@ public class Menu
         
         while(!finished)
         {
-            printChoices();
-           
+            printChoices(choices);
+            
             choice = reader.getInput();
             choice = choice.toLowerCase();
             
+            // CHECK IF CHOICE IS VALID
         }
         return choice;
     }
     
-    private void printChoices()
+    private boolean checkIsValid(String [] choices, String choice)
     {
+        return false; 
+    }
+    
+    private void printChoices(String []choices)
+    {
+        System.out.println("Your choices are; \n");
+        
+        for(String choice: choices)
+        {
+            System.out.println(choice);
+        }
     }
 }
