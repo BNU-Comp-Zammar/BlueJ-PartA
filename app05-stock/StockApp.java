@@ -10,6 +10,7 @@
 public class StockApp
 {
     public final int FIRST_ID = 200;
+    public final String ADD = "add";
     
     // Use to get user input
     private InputReader input;
@@ -57,7 +58,7 @@ public class StockApp
      */
     public void executeMenuChoice(String choice)
     {
-        if(choice.equals("add"))
+        if(choice.equals(ADD))
         {
            addProduct();
         }
