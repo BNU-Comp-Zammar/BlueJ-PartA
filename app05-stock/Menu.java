@@ -7,13 +7,13 @@
  */
 public class Menu
 {
-    private InputReader reader = new InputReader();
+    private static InputReader reader = new InputReader();
     
     /**
      * Display all the valid choices and make sure that the user 
      * chosen before returning
      */
-    public String getMenuChoice(String [] choices)
+    public static String getMenuChoice(String [] choices)
     {
         boolean finished = false;
         String choice = null ;
@@ -25,23 +25,33 @@ public class Menu
             choice = reader.getInput();
             choice = choice.toLowerCase();
             
-            // CHECK IF CHOICE IS VALID
+            finished = checkIsValid(choices,choice);
+            if(!finished)
+            {
+                System.out.println(" Not a valid choice!");
+            }
         }
         return choice;
     }
     
-    private boolean checkIsValid(String [] choices, String choice)
+    private static boolean checkIsValid(String [] choices, String choice)
     {
+        for (String validChoice : choices)
+        {
+            validChoice = validChoice.toLowerCase();
+            if(validChoice.startsWith(choice))
+                return true;
+        }
         return false; 
     }
     
-    private void printChoices(String []choices)
+    private static void printChoices(String []choices)
     {
-        System.out.println("Your choices are; \n");
+        System.out.println("Enter the first word, your choices are; \n");
         
         for(String choice: choices)
         {
-            System.out.println(choice);
+            System.out.println("    " + choice);
         }
     }
 }
