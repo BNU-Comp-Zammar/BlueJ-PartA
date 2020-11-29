@@ -42,6 +42,7 @@ public class Menu
             if(validChoice.startsWith(choice))
                 return true;
         }
+        System.out.println ("Invalid Menu Choice");
         return false; 
     }
     
