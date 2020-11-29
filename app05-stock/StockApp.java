@@ -171,7 +171,13 @@ public class StockApp
     
     public void sellProduct()
     {
-        
+        System.out.println("Sell an existing product");
+        System.out.println();
+  
+        int id = input.getInt("Please enter the id of the product");
+        int quantity = input.getInt("Please enter the quantity of the product");
+        manager.sellProduct(id,quantity);
+       
     }
     
     public void deliverProduct()
