@@ -41,6 +41,11 @@ public class StockApp
         {
             "Add a new product",
             "Remove an old product",
+            "Rename the product",
+            "Sell product",
+            "Deliver a product",
+            "Low Stock list",
+            "Restock product",
             "Print all products",
             "Quit the program"
         };
@@ -127,20 +132,6 @@ public class StockApp
         int id = Integer.parseInt(number);
         manager.removeProduct(id);
     }   
-
-    
-    /**
-     * Print out a menu of operation choices
-     */
-    private void printMenuChoices()
-    {
-        System.out.println();
-        System.out.println("    Add:        Add a new product");
-        System.out.println("    Remove:     Remove an old product");
-        System.out.println("    PrintAll:   Print all products");
-        System.out.println("    Quit:       Quit the program");
-        System.out.println();        
-    }
     
     public void printAllProducts()
     {
