@@ -76,17 +76,37 @@ public class StockApp
      */
     public void executeMenuChoice(String choice)
     {
-        if(choice.equals(ADD))
+        if(choice.startsWith(ADD))
         {
            addProduct();
         }
-        else if(choice.equals("remove"))
+        else if(choice.startsWith("remove"))
         {
            removeProducts();
         }
-        else if(choice.equals("printall"))
+        else if(choice.startsWith("print"))
         {
            printAllProducts();
+        }
+        else if(choice.startsWith("rename"))
+        {
+           renameProducts();
+        }
+        else if(choice.startsWith("sell"))
+        {
+           sellProducts();
+        }
+        else if(choice.startsWith("deliver"))
+        {
+           deliverProducts();
+        }
+        else if(choice.startsWith("low"))
+        {
+           printLowStock();
+        }
+        else if(choice.startsWith("restock"))
+        {
+           restockProducts();
         }
     }
     
@@ -132,6 +152,15 @@ public class StockApp
         int id = Integer.parseInt(number);
         manager.removeProduct(id);
     }   
+    
+    public void renameProduct()
+    {
+        System.out.println("Rename existing product");
+        System.out.println();
+  
+        int id = input.getInt("Please enter the id of the product");
+        manager.removeProduct(id);
+    }
     
     public void printAllProducts()
     {
