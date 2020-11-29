@@ -90,15 +90,15 @@ public class StockApp
         }
         else if(choice.startsWith("rename"))
         {
-           renameProducts();
+           renameProduct();
         }
         else if(choice.startsWith("sell"))
         {
-           sellProducts();
+           sellProduct();
         }
         else if(choice.startsWith("deliver"))
         {
-           deliverProducts();
+           deliverProduct();
         }
         else if(choice.startsWith("low"))
         {
@@ -106,7 +106,7 @@ public class StockApp
         }
         else if(choice.startsWith("restock"))
         {
-           restockProducts();
+           restock();
         }
     }
     
@@ -160,6 +160,28 @@ public class StockApp
   
         int id = input.getInt("Please enter the id of the product");
         manager.removeProduct(id);
+    }
+    
+    public void restock()
+    {
+        
+    }
+    
+    public void sellProduct()
+    {
+        
+    }
+    
+    public void deliverProduct()
+    {
+        System.out.println("Enter ID of product for deliver");
+        System.out.println();
+    }
+    
+    public void printLowStock()
+    {
+        System.out.println("All products are currently have low stock\n");
+        System.out.println();
     }
     
     public void printAllProducts()
