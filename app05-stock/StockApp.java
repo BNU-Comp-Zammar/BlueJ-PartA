@@ -164,7 +164,9 @@ public class StockApp
     
     public void restock()
     {
-        
+        int stockLevel = input.getInt("Please enter low stock level");
+        int restockLevel = input.getInt("Please enter the restock level");
+        manager.printLowStock(stockLevel, restockLevel);
     }
     
     public void sellProduct()
@@ -180,8 +182,10 @@ public class StockApp
     
     public void printLowStock()
     {
-        System.out.println("All products are currently have low stock\n");
-        System.out.println();
+        int stockLevel = input.getInt("Please enter low stock level");
+        
+        
+        manager.printLowStock(stockLevel, 0);
     }
     
     public void printAllProducts()
