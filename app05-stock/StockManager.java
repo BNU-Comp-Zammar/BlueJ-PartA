@@ -182,4 +182,23 @@ public class StockManager
         }
         return result; 
     }
+    
+    public void printLowStock(int stockLevel,int restockLevel)
+    {
+        ArrayList<Product> products = getLowStock(stockLevel);
+
+        if(products.size() > 0)
+        {
+            for (Product product : products)
+            {
+                if(restockLevel > 0)
+                    product.increaseQuantity(restockLevel);
+                System.out.println(product);
+            }
+        }
+        else
+        {
+            System.out.println("Currently no Products have low stock");
+        }
+    }
 }    
