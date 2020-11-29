@@ -169,4 +169,17 @@ public class StockManager
         
         System.out.println();
     }
+    
+    private ArrayList<Product> getLowStock (int stockLevel)
+    {
+        ArrayList<Product> result = new ArrayList<Product>();
+        for (Product product : stock) 
+        {
+            if(product.getQuantity() <= stockLevel)
+            {
+                result.add(product);
+            }
+        }
+        return result; 
+    }
 }    
