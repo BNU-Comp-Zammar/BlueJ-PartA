@@ -32,4 +32,9 @@ public class InputReader
 
         return inputLine;
     }
+    
+    public int getInt(String prompt)
+    {
+        return 0;
+    }
 }
