@@ -63,7 +63,7 @@ public class StockManager
         if(product != null)
         {
             stock.remove(product);
-            System.out.println("\nProduct " + product + " removed!\n");
+            System.out.println("/nProduct " + product + " removed!\n");
         }
         else
         {
