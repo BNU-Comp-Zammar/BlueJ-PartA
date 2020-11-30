@@ -1,0 +1,200 @@
+Invalid Menu Choice
+Enter the first word, your choices are; 
+
+    Add a new product
+    Remove an old product
+    Rename the product
+    Sell product
+    Deliver a product
+    Low Stock list
+    Restock product
+    Print all products
+    Quit the program
+> delivery
+Invalid Menu Choice
+Enter the first word, your choices are; 
+
+    Add a new product
+    Remove an old product
+    Rename the product
+    Sell product
+    Deliver a product
+    Low Stock list
+    Restock product
+    Print all products
+    Quit the program
+> deliver
+Enter ID of product for deliver
+
+******************************
+ Stock Management Application 
+    App05: by Zammar Baig
+******************************
+Enter the first word, your choices are; 
+
+    Add a new product
+    Remove an old product
+    Rename the product
+    Sell product
+    Deliver a product
+    Low Stock list
+    Restock product
+    Print all products
+    Quit the program
+> 103
+Invalid Menu Choice
+Enter the first word, your choices are; 
+
+    Add a new product
+    Remove an old product
+    Rename the product
+    Sell product
+    Deliver a product
+    Low Stock list
+    Restock product
+    Print all products
+    Quit the program
+> sell
+Sell an existing product
+
+Please enter the id of the product
+101
+Please enter the quantity of the product
+1
+******************************
+ Stock Management Application 
+    App05: by Zammar Baig
+******************************
+Enter the first word, your choices are; 
+
+    Add a new product
+    Remove an old product
+    Rename the product
+    Sell product
+    Deliver a product
+    Low Stock list
+    Restock product
+    Print all products
+    Quit the program
+> restock
+Please enter low stock level
+1
+Please enter the restock level
+5
+102: Samsung Galaxy S20 stock level: 5
+103: Google Pixel 4A stock level: 5
+104: Apple Mac stock level: 5
+105: Microsoft Surface stock level: 5
+106:  Microsoft XP stock level: 5
+107:  Apple iPad Air stock level: 5
+108:  Dell Latitude stock level: 5
+109:  Lenova ThinkPad stock level: 5
+110:  Samsung Galaxy S3 stock level: 5
+200: new product stock level: 5
+******************************
+ Stock Management Application 
+    App05: by Zammar Baig
+******************************
+Enter the first word, your choices are; 
+
+    Add a new product
+    Remove an old product
+    Rename the product
+    Sell product
+    Deliver a product
+    Low Stock list
+    Restock product
+    Print all products
+    Quit the program
+> sell
+Sell an existing product
+
+Please enter the id of the product
+104
+Please enter the quantity of the product
+2
+104: Apple Mac stock level: 5
+104: Apple Mac stock level: 3
+******************************
+ Stock Management Application 
+    App05: by Zammar Baig
+******************************
+Enter the first word, your choices are; 
+
+    Add a new product
+    Remove an old product
+    Rename the product
+    Sell product
+    Deliver a product
+    Low Stock list
+    Restock product
+    Print all products
+    Quit the program
+> sell
+Sell an existing product
+
+Please enter the id of the product
+104
+Please enter the quantity of the product
+10
+104: Apple Mac stock level: 3
+104: Apple Mac stock level: 0
+******************************
+ Stock Management Application 
+    App05: by Zammar Baig
+******************************
+Enter the first word, your choices are; 
+
+    Add a new product
+    Remove an old product
+    Rename the product
+    Sell product
+    Deliver a product
+    Low Stock list
+    Restock product
+    Print all products
+    Quit the program
+> sell
+Sell an existing product
+
+Please enter the id of the product
+105
+Please enter the quantity of the product
+-2
+105: Microsoft Surface stock level: 5
+105: Microsoft Surface stock level: 7
+******************************
+ Stock Management Application 
+    App05: by Zammar Baig
+******************************
+Enter the first word, your choices are; 
+
+    Add a new product
+    Remove an old product
+    Rename the product
+    Sell product
+    Deliver a product
+    Low Stock list
+    Restock product
+    Print all products
+    Quit the program
+> low stock
+Please enter low stock level
+2
+104: Apple Mac stock level: 0
+******************************
+ Stock Management Application 
+    App05: by Zammar Baig
+******************************
+Enter the first word, your choices are; 
+
+    Add a new product
+    Remove an old product
+    Rename the product
+    Sell product
+    Deliver a product
+    Low Stock list
+    Restock product
+    Print all products
+    Quit the program
+> 
