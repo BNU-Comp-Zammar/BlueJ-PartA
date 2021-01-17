@@ -5,7 +5,7 @@ import java.util.ArrayList;
  * The stock is described by zero or more Products.
  * 
  * @author (Zammar Baig) 
- * @version (version 1)
+ * @version (version 1 - edited)
  */
 public class StockManager
 {
