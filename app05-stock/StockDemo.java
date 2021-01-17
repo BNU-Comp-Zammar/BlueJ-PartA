@@ -29,6 +29,7 @@ public class StockDemo
         manager.addProduct(new Product(108,  " Dell Latitude"));
         manager.addProduct(new Product(109,  " Lenova ThinkPad"));
         manager.addProduct(new Product(110,  " Samsung Galaxy S3"));
+        manager.addProduct(new Product (111, " Apple Watch 2 "));
     }
     
     /**
